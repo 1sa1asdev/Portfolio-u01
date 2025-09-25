@@ -1,0 +1,93 @@
+    html {
+      scroll-behavior: smooth;
+    }
+
+    :target {
+      scroll-margin-top: 8rem;
+    }
+
+    body { margin: 0; font: 16px/1.5 "Poppins",system-ui;  }
+    
+    h1{
+      font-weight: 700;
+    }
+    header {
+      justify-content: center;
+      position: sticky;
+      gap: 2rem;
+      display: flex;
+      top: 0; 
+      padding: 1rem; 
+      background: #fff; 
+    }
+    .logo{
+        display: inline-flex;
+        align-items: center;
+        text-decoration: none;
+        padding: 0rem;
+        margin-right: auto;
+        margin-left: 14rem;
+    }
+    .navlinks{
+        display:inline-flex;
+        gap: 3rem;
+        margin-right: 16rem;
+    }
+    .navlinks img{
+        height:1.875rem;
+        width: 1.875rem;
+    }
+    .logotext{
+        text-align:center;
+        justify-content: flex-start; 
+        flex-direction: column;
+        gap:0;
+    }
+    .bigtext,.smalltext{
+        width: 6.0625rem;
+        height: 3.6875rem;
+        line-height: 119%;
+        margin-top: -0.1rem;
+        
+    }
+    .bigtext{
+    font-size: 2.5rem;
+    }
+    .smalltext{
+    font-size:1.1rem;
+    letter-spacing: 0.05rem;
+    }
+    .navtext{
+        text-decoration: none;
+        color:#666666;
+        size:1.25rem; 
+    }
+    section { 
+        min-height: 100vh; padding-bottom: 3rem;
+    }
+    .contentbox{
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        padding: 0rem 5rem;
+        margin-bottom: 5rem;
+    }
+    .pfp{
+        height:21.8125rem;
+        width:21.8125rem;
+    }
+    .hometext{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding:2rem 11rem 9rem;
+        align-items: center;
+    }
+    h2{
+        font-size:3.625rem ;
+    }
+    footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
