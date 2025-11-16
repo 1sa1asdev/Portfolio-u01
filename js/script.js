@@ -19,3 +19,8 @@ navLinks.forEach(link => {
     }
   });
 });
+
+import {localfetchData} from './localfetch.js';
+import {remotefetchData} from './remotefetch.js';
+remotefetchData();
+localfetchData();
