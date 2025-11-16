@@ -1,0 +1,46 @@
+{
+"Workplaces": [
+    {
+        "id": 1,
+        "Title":"Wordpress Webbdesigner",
+        "Company":" DST Control",
+        "City":"Linköping",
+        "Date":"June 2024 - okt 2024",
+        "Status":"Full Time"
+
+    },
+    {
+
+        "id": 2,
+        "Title":"C++ Software Developer",
+        "Company":" DST Control",
+        "City":"Linköping",
+        "Date":"Nov 2023 - June 2024",
+        "Status":"Full Time"
+
+    }
+
+],
+
+
+ "Education":[
+    {
+        "id":1,
+        "Title":"Systemutvecklare.net",
+        "School":"TUC Yrkeshögskola",
+        "City":"Linköping",
+        "Date":"Sep 2022 - June 2024",
+        "Status":"Full Time"
+    },
+    
+    {
+        "id":2,
+        "Title":"Teknik",
+        "School":"Bildningscentrum Facetten",
+        "City":"Åtvidaberg",
+        "Date":"Aug 2018 - June 2021",
+        "Status":"Full Time"
+    }
+ ]
+
+}
