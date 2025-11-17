@@ -46,6 +46,8 @@ body {
   width: 100%;
   padding-top: var(--header-h);
   padding-bottom: var(--footer-h);
+  /* only add smooth transitions, no color changes */
+  transition: background-color 0.25s ease, color 0.25s ease;
 }
 
 body.no-scroll {
@@ -97,6 +99,13 @@ footer {
   padding: 0 1rem;
 }
 
+/* smooth transitions for surfaces */
+header,
+footer,
+.navlinks,
+.projcards {
+  transition: background-color 0.25s ease, color 0.25s ease, box-shadow 0.25s ease;
+}
 
 .logo {
   display: inline-flex;
@@ -187,6 +196,29 @@ footer {
 .nav-socials img {
   width: 1.875rem;
   height: 1.875rem;
+}
+
+/* Dark mode toggle button (light mode styling) */
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  border: 1px solid #e5e7eb;
+  background: #f9fafb;
+  font-size: 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  outline: none;
+}
+
+.theme-toggle:hover {
+  box-shadow: 0 2px 6px rgba(15, 23, 42, 0.12);
+}
+
+.theme-toggle:active {
+  transform: scale(0.97);
 }
 
 .gradienteffect {
@@ -418,6 +450,10 @@ hr {
     color: var(--color-text-grey);
   }
 
+  .theme-toggle {
+    font-size: 0.85rem;
+  }
+
   :target {
     scroll-margin-top: 10rem;
   }
@@ -530,4 +566,59 @@ hr {
   .contactbox {
     margin-top: 12rem;
   }
+}
+
+/* =================================================================== */
+/* 5. DARK THEME */
+/* =================================================================== */
+
+body.dark-theme {
+  background-color: #020617; 
+  color: #e5e7eb;            
+}
+
+body.dark-theme header,
+body.dark-theme footer {
+  background: #020617;
+  box-shadow: 0 1px 0 rgba(15, 23, 42, 0.9);
+}
+
+body.dark-theme .navlinks {
+  background: #020617;
+}
+
+body.dark-theme h2,
+body.dark-theme #uppertext-contact,
+body.dark-theme .navtext,
+body.dark-theme .purple-p {
+  color: #e5e7eb;
+}
+
+body.dark-theme .nav-socials img {
+  filter: brightness(1.2);
+}
+
+body.dark-theme .projcards {
+  background-color: #020617;
+  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.75);
+}
+
+body.dark-theme .projcardline-item a {
+  color: #e5e7eb;
+}
+
+body.dark-theme hr {
+  border-color: #374151;
+  opacity: 0.4;
+}
+
+body.dark-theme .theme-toggle {
+  background: #111827;
+  border-color: #374151;
+  color: #e5e7eb;
+}
+
+body.dark-theme .hamburger-menu img {
+  filter: brightness(0) invert(1); 
+  transition: filter 0.25s ease;
 }

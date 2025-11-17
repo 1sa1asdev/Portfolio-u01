@@ -22,5 +22,7 @@ navLinks.forEach(link => {
 
 import {localfetchData} from './localfetch.js';
 import {remotefetchData} from './remotefetch.js';
+import { initDarkMode } from "./darkmode.js";
+initDarkMode();
 remotefetchData();
 localfetchData();
